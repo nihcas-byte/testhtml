@@ -19,6 +19,33 @@ p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:norma
 <p>2. Populate a resume.</p>
 <p>3. Other integration and APIs.</p>
 
+<button> I am happy </button>
+
+<h2>JavaScript Geolocation</h2>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
 <br>
 <footer> This is a test website under Azure Projects.</footer>
 </body>
