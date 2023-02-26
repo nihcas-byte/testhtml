@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- HTML Codes by Quackit.com -->
-<title>Home - Welcome to Azure WebApps</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="DevOps, Learnings, Azure">
-<meta name="description" content="Home of the Azure Learnings on Azure for DevOps">
+  <!-- HTML Codes by Quackit.com -->
+  <title>Home - Welcome to Azure WebApps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="DevOps, Learnings, Azure">
+  <meta name="description" content="Home of the Azure Learnings on Azure for DevOps">
 </head>
+
+
 <style>
-body {background-color:#ffffff;background-image:url(/background.jpg);background-repeat:no-repeat;background-position:center;background-attachment:scroll;}
-h1{font-family:Arial, sans-serif;color:#000000}
-p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  border: 0px solid green;
+  text-shadow:#2df513;
+  text-align: center;
+  font-size: medium;
+}
+
+  body {background-image:url(/background.jpg);background-repeat:no-repeat;background-position:center;background-attachment:scroll;}
+  h1 {font-family:Arial, sans-serif;color:#034cf7}
+  h2 {font-family:Arial, sans-serif;color:#310237; text-align:center}
+  p {font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:14px;font-style:normal;font-weight:normal;color:#521bf5; text-align:center}
 
 </style>
 <body>
@@ -18,28 +33,37 @@ p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:norma
 <blockquote> 
 <bold>
 <h1>Welcome to the Page of Azure WebApps</h1>
-<p>I will do the following topics here:</p>
+<h2>I will do the following topics here:</h2>
 <p>1. Add CSS and JS files.</p>
 <p>2. Populate a resume.</p>
 <p>3. Other integration and APIs.</p>
 </blockquote>
 </bold>
 
+<hr>
+<br>
 
-<p style="color:rgb(245, 23, 15);"> This project is scheduled for Planned Maintenance on 26.02.2023. </p>
+<div class="center">
+<button onclick="window.location.href='//www.google.co.in';">Go to Google</button>
+</div>
 
+<br>
+<br>
 
-<button onclick="window.location.href='//www.google.co.in';">Go to Google.com</button>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Display Date & Time.</button>
+<div class="center">
+  <button type="button" onclick="document.getElementById('datetime').innerHTML = Date()"> Display Date & Time
+  </button>
+</div>
+<p id="datetime"></p>
 
 <h2>JavaScript Geolocation</h2>
-
 <p>Click the button to get your coordinates.</p>
-<button onclick="getLocation()">Try It</button>
-<p id="demo"></p>
+<div class="center"> 
+  <button onclick="getLocation()">Get coordinates</button>
+</div>
 
+
+<p id="demo"></p>
 <script>
 const x = document.getElementById("demo");
 
@@ -57,20 +81,17 @@ function showPosition(position) {
 }
 </script>
 
-<br>
-<footer> {text-align: center;} <h4>This is a test website under Azure Projects. the devotion of time and attention to gaining knowledge of an academic subject, especially by means of books: 
-  "the study of English" · "an application to continue full-time study"<h4></footer>
-</body>
+<marquee width="60%" direction="center" height="100px" scrollmount="2">
+  <p style="color:rgb(245, 23, 15);"> Attention!!! This project is scheduled for Planned Maintenance on 26.02.2023.
+  </p>
+</marquee>
 
-<div>
-  <label for="password">Password</input>
-  <input id="password" name="password" type="password" aria-describedby="password-requirements" />
-  <p id="password-requirements">Please create a new password. Must contain at least 8 characters, one uppercase letter, one lowercase letter, and one special character.</p>
+<hr>
+
+<div class="center">
+  <footer> static test website under Azure Projects.&#169TeamSkyCD
+  </footer>
 </div>
 
-
- <Title>This is is a new Table</Title>
-
-
- 
+</body>
 </html>
