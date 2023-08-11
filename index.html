@@ -63,6 +63,7 @@
 </div>
 
 
+
 <p id="demo"></p>
 <script>
 const x = document.getElementById("demo");
@@ -79,6 +80,26 @@ function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }
+
+// Function to update and display visit count
+function updateVisitCount() {
+            // Get the current visit count from localStorage
+            let count = localStorage.getItem('visitCount');
+            
+            // If the count doesn't exist, set it to 1, otherwise increment it
+            if (count === null) {
+                count = 1;
+            } else {
+                count = parseInt(count) + 1;
+            }
+            
+            // Update the localStorage and display the count
+            localStorage.setItem('visitCount', count);
+            document.getElementById('visitCount').textContent = count;
+
+// Call the function when the page loads
+updateVisitCount();
+
 </script>
 
 <marquee width="60%" direction="center" height="100px" scrollmount="2">
