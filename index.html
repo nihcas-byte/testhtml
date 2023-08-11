@@ -96,11 +96,16 @@ function updateVisitCount() {
             // Update the localStorage and display the count
             localStorage.setItem('visitCount', count);
             document.getElementById('visitCount').textContent = count;
-
-// Call the function when the page loads
-updateVisitCount();
+          }
 
 </script>
+// Call the function when the page loads
+;
+
+<p>Click the button to get your coordinates.</p>
+<div class="center"> 
+  <button onclick="updateVisitCount()">Visitor Counter</button>
+</div>
 
 <marquee width="60%" direction="center" height="100px" scrollmount="2">
   <p style="color:rgb(245, 23, 15);"> Attention!!! This project is scheduled for Planned Maintenance.
