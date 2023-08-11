@@ -81,31 +81,8 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 
-// Function to update and display visit count
-function updateVisitCount() {
-            // Get the current visit count from localStorage
-            let count = localStorage.getItem('visitCount');
-            
-            // If the count doesn't exist, set it to 1, otherwise increment it
-            if (count === null) {
-                count = 1;
-            } else {
-                count = parseInt(count) + 1;
-            }
-            
-            // Update the localStorage and display the count
-            localStorage.setItem('visitCount', count);
-            document.getElementById('visitCount').textContent = count;
-          }
-
 </script>
-// Call the function when the page loads
-;
 
-<p>Click the button to get your coordinates.</p>
-<div class="center"> 
-  <button onclick="updateVisitCount()">Visitor Counter</button>
-</div>
 
 <marquee width="60%" direction="center" height="100px" scrollmount="2">
   <p style="color:rgb(245, 23, 15);"> Attention!!! This project is scheduled for Planned Maintenance.
